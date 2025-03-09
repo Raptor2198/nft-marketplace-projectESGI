@@ -1,4 +1,4 @@
-# 🎨 Marketplace NFT - React, Ethereum & IPFS 🎨
+# 🎨 Marketplace NFT - React, Materail UI, Truffle box using React et Material UI, Ethereum & IPFS 🎨
 
 Une Marketplace décentralisée de NFT avec React.js, Solidity, IPFS, Ganache et Metamask.  
 Projet développé dans le cadre d'un apprentissage blockchain et décentralisation.
