@@ -1,11 +1,7 @@
-<p align="center">
-  <h1 align="center">🎨 Marketplace NFT - React, Ethereum & IPFS 🎨</h1>
-</p>
+# 🎨 Marketplace NFT - React, Ethereum & IPFS 🎨
 
-<p align="center">
-  Une Marketplace décentralisée de NFT avec React.js, Solidity, IPFS, Ganache et Metamask.  
-  Projet développé dans le cadre d'un apprentissage blockchain et décentralisation.
-</p>
+Une Marketplace décentralisée de NFT avec React.js, Solidity, IPFS, Ganache et Metamask.  
+Projet développé dans le cadre d'un apprentissage blockchain et décentralisation.
 
 ---
 
@@ -46,6 +42,7 @@ Créer une Marketplace NFT similaire à OpenSea permettant :
 ## 💻 Installation & Test en local
 
 ### 🔹 Pré-requis :
+
 - Ganache  
 - Node.js  
 - Metamask installé dans le navigateur  
@@ -53,63 +50,103 @@ Créer une Marketplace NFT similaire à OpenSea permettant :
 
 ### 📌 Cloner et configurer le projet :
 
+```bash
 git clone git@github.com:Raptor2198/nft-marketplace-projectESGI.git
 cd nft-marketplace-projectESGI
+```
 
 ### Installer les dépendances du frontend
+
+```bash
 cd client
 yarn install
+```
 
 ### Installer les dépendances dans le dossier racine
+
+```bash
 yarn install
+```
 
-🛠 Déployer les contrats avec Truffle & Ganache
+### 🛠 Déployer les contrats avec Truffle & Ganache
 
-1️⃣ Démarrer Ganache
+1️⃣ Démarrer Ganache  
+
+```bash
 ganache-cli
+```
+
 ou
+
+```bash
 ganache gui
+```
 
 2️⃣ Déploiement des contrats
-truffle compile
- truffle migrate --reset --network development
 
-🌐 Lancer l'application React.js
+```bash
+truffle compile
+truffle migrate --reset --network development
+```
+
+### 🌐 Lancer l'application React.js
+
+```bash
 cd client
 yarn start
-🔗 Ouvrir votre navigateur sur : http://localhost:3000
+```
 
-### 🎯 Réalisations du Projet (succès)
-✅ Déploiement des contrats intelligents via Truffle
-✅ Intégration React.js avec Material UI
-✅ Hébergement des métadonnées sur IPFS via Pinata
-✅ Intégration complète de Metamask pour gérer les transactions
-✅ Tests locaux avec Ganache réussis
+🔗 Ouvrir votre navigateur sur : [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🎯 Réalisations du Projet (succès)
+
+✅ Déploiement des contrats intelligents via Truffle  
+✅ Intégration React.js avec Material UI  
+✅ Hébergement des métadonnées sur IPFS via Pinata  
+✅ Intégration complète de Metamask pour gérer les transactions  
+✅ Tests locaux avec Ganache réussis  
+
+---
 
 ## 🐞 Problèmes rencontrés
-❌ Difficultés à récupérer les métadonnées via contractMetadata.
-❌ Erreurs d'appel à contract.methods (fonction .call() non reconnue).
-❌ Problèmes avec les formats des URL IPFS dans l'affichage frontend.
-❌ Problèmes d'affichage des collections NFT (problème d'état initial vide).
+
+❌ Difficultés à récupérer les métadonnées via contractMetadata.  
+❌ Erreurs d'appel à contract.methods (fonction .call() non reconnue).  
+❌ Problèmes avec les formats des URL IPFS dans l'affichage frontend.  
+❌ Problèmes d'affichage des collections NFT (problème d'état initial vide).  
+
+---
 
 ## ⚠️ À faire pour résoudre les problèmes rencontrés
-🔍 Vérifier et ajuster la fonction contractMetadata() du contrat.
-🔄 Vérifier la compatibilité entre Web3.js et le type retourné par Truffle Contract.
-🛡 Implémenter un mécanisme de fallback robuste en cas d’erreur lors du fetch JSON sur IPFS.
-📝 Corriger l'appel et le parsing du JSON stocké dans IPFS.
+
+🔍 Vérifier et ajuster la fonction contractMetadata() du contrat.  
+🔄 Vérifier la compatibilité entre Web3.js et le type retourné par Truffle Contract.  
+🛡 Implémenter un mécanisme de fallback robuste en cas d’erreur lors du fetch JSON sur IPFS.  
+📝 Corriger l'appel et le parsing du JSON stocké dans IPFS.  
+
+---
 
 ## 📌 Roadmap (prochaines étapes)
-✅ Résoudre le problème de récupération des métadonnées JSON des NFT.
-✅ Finaliser l'intégration complète du frontend avec les smart contracts.
-🔄 Mettre en place une fonction d'achat/vente des NFT.
-🔄 Déployer officiellement sur Sepolia ou Holesky.
-🔄 Effectuer des audits de sécurité du smart contract.
-🔄 Documenter précisément chaque étape du déploiement final.
 
-🛡️ Sécurité & Bonnes pratiques
-🔍 Audits et tests rigoureux des smart contracts pour prévenir les failles (phishing, manipulation des transactions).
-✅ Validation stricte des entrées utilisateur et des transactions blockchain.
-🔗 Bonnes pratiques recommandées par OpenZeppelin pour les contrats ERC721.
+✅ Résoudre le problème de récupération des métadonnées JSON des NFT.  
+✅ Finaliser l'intégration complète du frontend avec les smart contracts.  
+🔄 Mettre en place une fonction d'achat/vente des NFT.  
+🔄 Déployer officiellement sur Sepolia ou Holesky.  
+🔄 Effectuer des audits de sécurité du smart contract.  
+🔄 Documenter précisément chaque étape du déploiement final.  
 
-👨‍💻 L'équipe de développement
-Mitchel Steeve ANDRIATSILAVO
+---
+
+## 🛡️ Sécurité & Bonnes pratiques
+
+🔍 Audits et tests rigoureux des smart contracts pour prévenir les failles (phishing, manipulation des transactions).  
+✅ Validation stricte des entrées utilisateur et des transactions blockchain.  
+🔗 Bonnes pratiques recommandées par OpenZeppelin pour les contrats ERC721.  
+
+---
+
+## 👨‍💻 L'équipe de développement
+
+**Mitchel Steeve ANDRIATSILAVO**
