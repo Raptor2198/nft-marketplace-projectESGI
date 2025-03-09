@@ -52,7 +52,7 @@ Créer une Marketplace NFT similaire à OpenSea permettant :
 - Truffle  
 
 ### 📌 Cloner et configurer le projet :
-```bash
+
 git clone git@github.com:Raptor2198/nft-marketplace-projectESGI.git
 cd nft-marketplace-projectESGI
 
