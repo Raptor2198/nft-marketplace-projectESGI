@@ -56,52 +56,49 @@ Créer une Marketplace NFT similaire à OpenSea permettant :
 git clone git@github.com:Raptor2198/nft-marketplace-projectESGI.git
 cd nft-marketplace-projectESGI
 
-# Installer les dépendances du frontend
+### Installer les dépendances du frontend
 cd client
 yarn install
 
-# Installer les dépendances dans le dossier racine
+### Installer les dépendances dans le dossier racine
 yarn install
+
 🛠 Déployer les contrats avec Truffle & Ganache
+
 1️⃣ Démarrer Ganache
-bash
-Copier
-Modifier
 ganache-cli
-# ou
+ou
 ganache gui
+
 2️⃣ Déploiement des contrats
-bash
-Copier
-Modifier
-truffle migrate --reset
+truffle compile
+ truffle migrate --reset --network development
+
 🌐 Lancer l'application React.js
-bash
-Copier
-Modifier
 cd client
 yarn start
 🔗 Ouvrir votre navigateur sur : http://localhost:3000
 
-🎯 Réalisations du Projet (succès)
+### 🎯 Réalisations du Projet (succès)
 ✅ Déploiement des contrats intelligents via Truffle
 ✅ Intégration React.js avec Material UI
 ✅ Hébergement des métadonnées sur IPFS via Pinata
 ✅ Intégration complète de Metamask pour gérer les transactions
 ✅ Tests locaux avec Ganache réussis
 
-🐞 Problèmes rencontrés
+## 🐞 Problèmes rencontrés
 ❌ Difficultés à récupérer les métadonnées via contractMetadata.
 ❌ Erreurs d'appel à contract.methods (fonction .call() non reconnue).
 ❌ Problèmes avec les formats des URL IPFS dans l'affichage frontend.
 ❌ Problèmes d'affichage des collections NFT (problème d'état initial vide).
 
-⚠️ À faire pour résoudre les problèmes rencontrés
+## ⚠️ À faire pour résoudre les problèmes rencontrés
 🔍 Vérifier et ajuster la fonction contractMetadata() du contrat.
 🔄 Vérifier la compatibilité entre Web3.js et le type retourné par Truffle Contract.
 🛡 Implémenter un mécanisme de fallback robuste en cas d’erreur lors du fetch JSON sur IPFS.
 📝 Corriger l'appel et le parsing du JSON stocké dans IPFS.
-📌 Roadmap (prochaines étapes)
+
+## 📌 Roadmap (prochaines étapes)
 ✅ Résoudre le problème de récupération des métadonnées JSON des NFT.
 ✅ Finaliser l'intégration complète du frontend avec les smart contracts.
 🔄 Mettre en place une fonction d'achat/vente des NFT.
@@ -113,13 +110,6 @@ yarn start
 🔍 Audits et tests rigoureux des smart contracts pour prévenir les failles (phishing, manipulation des transactions).
 ✅ Validation stricte des entrées utilisateur et des transactions blockchain.
 🔗 Bonnes pratiques recommandées par OpenZeppelin pour les contrats ERC721.
-📚 Documentation et Ressources Complémentaires
-Truffle Framework
-Ganache
-Metamask
-Pinata (IPFS)
-Material UI
-Web3.js
+
 👨‍💻 L'équipe de développement
 Mitchel Steeve ANDRIATSILAVO
-
